@@ -16,11 +16,10 @@ class DepartmentController extends Controller
         if($request->filled('search')){
             $departments = $departments->where('title_'.app()->getLocale(),'like','%'.$request->search.'%');
         }
-        $departmentNews=$departments->get();
-
+        $departments=$departments->paginate(12);
         return view('frontend.departments.index',compact(
             'department',
-            'departmentNews',
+            'departments',
                 ));
     }
     public function showDepartment($language, $slug){

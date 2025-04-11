@@ -18,7 +18,7 @@ class BlogController extends Controller
         if($request->filled('search')){
             $blogs = $blogs->where('title_'.app()->getLocale(),'like','%'.$request->search.'%');
         }
-        $blogs = $blogs->paginate(10);
+        $blogs = $blogs->paginate(12);
         return view('frontend.blogs.index',compact(
             'blog',
             'blogs'

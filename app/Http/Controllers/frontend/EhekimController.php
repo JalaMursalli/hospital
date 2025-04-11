@@ -26,6 +26,16 @@ class EhekimController extends Controller
             'surname' => ['required', 'max:200'],
             'email' => ['required', 'email'],
             'phone' => ['required', 'max:200'],
+        ],[
+            "name.required"=>__('frontend.name_required'),
+            "name.max"=>__('frontend.name_max'),
+            "surname.required"=>__('frontend.surname_required'),
+            "surname.max"=>__('frontend.surname_max'),
+            "email.required"=>__('frontend.surname_required'),
+            "email.demand"=>__('frontend.email_demand'),
+            "phone.required"=>__('frontend.phone_required'),
+            "phone.max"=>__('frontend.phone_max'),
+
         ]);
         $application = new EhekimApplication();
 

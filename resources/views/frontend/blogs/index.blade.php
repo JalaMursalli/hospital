@@ -1,6 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
 @include('frontend.blogs.blog-banner')
+@section('title',$settings['blog'])
 <div class="blogs">
     <div class="all-blogs">
 
@@ -48,7 +49,7 @@
             <!-- Loop through the pages and create pagination items -->
             @for ($i = 1; $i <= $blogs->lastPage(); $i++)
                 <a href="{{ $blogs->url($i) }}" class="pagination-item {{ $i == $blogs->currentPage() ? 'active' : '' }}">
-                    
+
                 </a>
             @endfor
         </div>

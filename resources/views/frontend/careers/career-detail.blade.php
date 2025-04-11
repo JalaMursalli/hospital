@@ -1,5 +1,6 @@
 @extends('frontend.layouts.layout')
 @section('content')
+@section('title',$settings['career'])
 <div class="detail-banner">
     <div class="nav">
         <a href="{{route('home')}}" class="logo">
@@ -83,28 +84,28 @@
             <p>{!! $career?->description3!!}</p>
         </div>
     </div>
-    <form action="{{ route('career.apply') }}" class="vacancy-detail-form" method="post" enctype="multipart/form-data">
+    <form action="{{ route('career.apply', ['language'=>app()->getLocale()]) }}" class="vacancy-detail-form" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-line">
             <input type="hidden" name="career_id" value="{{ $career->id }}">
             <input type="text" name = "name" placeholder="{{$settings['fullname']}}" value="{{ old('name') }}" />
-            @error('name') <span class="text-danger">{{ $message }}</span> @enderror
+            @error('name') <span class="text-danger"><p style="color: red">{{ $message }}</p></span> @enderror
             <input type="text" name = "phone" placeholder="{{$settings['phone']}}"  value="{{ old('phone') }}" />
-            @error('phone') <span class="text-danger">{{ $message }}</span> @enderror
+            @error('phone') <span class="text-danger"><p style="color: red">{{ $message }}</p></span> @enderror
             <input type="text" name = "email" placeholder="{{$settings['mail']}}" value="{{ old('email') }}" />
-            @error('email') <span class="text-danger">{{ $message }}</span> @enderror
+            @error('email') <span class="text-danger"><p style="color: red">{{ $message }}</p></span> @enderror
             <div class="file-area">
                 <p>
                     {{$settings['cv']}}
 
                 </p>
                 <input type="file"name="cv" >
-                @error('cv') <span class="text-danger">{{ $message }}</span> @enderror
+                @error('cv') <span class="text-danger"><p style="color: red">{{ $message }}</p></span> @enderror
                 <span class="fileName"></span>
             </div>
         </div>
         <textarea name="text" id="" placeholder="{{$settings['text']}}">{{ old('text') }}</textarea>
-        @error('text') <span class="text-danger">{{ $message }}</span> @enderror
+        @error('text') <span class="text-danger"><p style="color: red">{{ $message }}</p></span> @enderror
         <button class="sendCvBtn" type="submit"> {{$settings['apply']}}</button>
     </form>
 </div>

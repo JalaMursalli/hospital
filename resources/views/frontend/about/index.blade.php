@@ -1,6 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
  @include('frontend.about.about-banner')
+ @section('title',$settings['about'])
  <div class="about-container">
     <div class="about-img-area">
         <div class="about_apply">

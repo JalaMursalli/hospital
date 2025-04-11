@@ -1,6 +1,8 @@
 @extends('frontend.layouts.layout')
 @section('content')
 @include('frontend.doctors.doctor-banner')
+
+@section('title',$settings['doctors'])
 <div class="doctors-container">
     <div class="all-doctors">
 

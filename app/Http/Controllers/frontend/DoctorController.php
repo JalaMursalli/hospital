@@ -14,7 +14,7 @@ class DoctorController extends Controller
     public function index(){
 
         $doctor= DoctorBanner::first();
-        $doctors = Doctor::paginate(10);
+        $doctors = Doctor::paginate(9);
         return view('frontend.doctors.index',compact(
             'doctor',
             'doctors'

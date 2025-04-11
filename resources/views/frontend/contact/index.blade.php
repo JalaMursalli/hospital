@@ -2,6 +2,7 @@
 
 @section('content')
 @include('frontend.contact.contact-banner')
+@section('title',$settings['contact'])
 <div class="contact-container">
     <div class="contact-main">
         <div class="contact-left">
@@ -16,13 +17,13 @@
         </div>
 
 
-        <form action="{{ route('contact.apply') }}" method="POST" class="contact-form">
+        <form action="{{ route('contact.apply', ['language'=>app()->getLocale()]) }}" method="POST" class="contact-form">
             @csrf
             <div class="form-item">
                 <label for="name"> {{$settings['fullname']}}</label>
                 <input type="text" name="name" id="name" placeholder="{{$settings['fullname']}}" value="{{ old('name') }}">
                 @error('name')
-                    <div class="error-message">{{ $message }}</div>
+                    <div class="error-message"><p style="color: red">{{ $message }}</p></div>
                 @enderror
             </div>
 
@@ -30,7 +31,7 @@
                 <label for="email">{{$settings['mail']}}</label>
                 <input type="email" name="email" id="email" placeholder="Loremipsum@gmail.com" value="{{ old('email') }}">
                 @error('email')
-                    <div class="error-message">{{ $message }}</div>
+                    <div class="error-message"><p style="color: red">{{ $message }}</p></div>
                 @enderror
             </div>
 
@@ -38,7 +39,7 @@
                 <label for="phone">{{$settings['phone']}}</label>
                 <input type="text" name="phone" id="phone" placeholder="Nümunə: +994 xx xxx xx xx" value="{{ old('phone') }}">
                 @error('phone')
-                    <div class="error-message">{{ $message }}</div>
+                    <div class="error-message"><p style="color: red">{{ $message }}</p></div>
                 @enderror
             </div>
 
@@ -46,7 +47,7 @@
                 <label for="text">{{$settings['message']}}</label>
                 <textarea name="text" id="text" placeholder="Mesajınız">{{ old('text') }}</textarea>
                 @error('text')
-                    <div class="error-message">{{ $message }}</div>
+                    <div class="error-message"><p style="color: red">{{ $message }}</p></div>
                 @enderror
             </div>
 

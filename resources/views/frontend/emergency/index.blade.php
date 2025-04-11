@@ -1,5 +1,6 @@
 @extends('frontend.layouts.layout')
 @section('content')
+@section('title',$settings['emergency'])
 <div class="detail-banner">
     <div class="nav">
         <a href="{{route('home')}}" class="logo">

@@ -1,6 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
 @include('frontend.departments.department-banner')
+@section('title',$settings['department'])
 <div class="departments-container">
     <div class="departments-head">
         <h2 class="headTitle">{{$settings['departments']}}</h2>
@@ -15,7 +16,7 @@
     </div>
     <div class="department-boxes">
 
-        @foreach ($departmentNews as $department)
+        @foreach ($departments as $department)
         <a href="{{route('showDepartment', ['language'=>app()->getLocale(),'slug'=>$department->slug])}} " class="department-box">
             <div class="icon">
                 <img src="{{asset($department?->icon)}}" alt="">
@@ -26,5 +27,70 @@
 
 
     </div>
+    <div class="pagination">
+       <!-- Previous Page Link -->
+        @if ($departments->currentPage() > 1)
+            <a href="{{ $departments->previousPageUrl() }}" class="prev">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#CCCCCC" stroke-opacity="0.8"/>
+                    <path d="M24.0002 15.0001V17.0001H12.0002L17.5002 22.5001L16.0802 23.9201L8.16016 16.0001L16.0802 8.08008L17.5002 9.50008L12.0002 15.0001H24.0002Z" fill="#CCCCCC" fill-opacity="0.8"/>
+                </svg>
+            </a>
+        @else
+            <span class="prev disabled">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#CCCCCC" stroke-opacity="0.8"/>
+                    <path d="M24.0002 15.0001V17.0001H12.0002L17.5002 22.5001L16.0802 23.9201L8.16016 16.0001L16.0802 8.08008L17.5002 9.50008L12.0002 15.0001H24.0002Z" fill="#CCCCCC" fill-opacity="0.8"/>
+                </svg>
+            </span>
+        @endif
+
+        <div class="pagination-links">
+            <!-- Loop through the pages and create pagination items -->
+            @for ($i = 1; $i <= $departments->lastPage(); $i++)
+                <a href="{{ $departments->url($i) }}" class="pagination-item {{ $i == $departments->currentPage() ? 'active' : '' }}">
+
+                </a>
+            @endfor
+        </div>
+
+        <!-- Next Page Link -->
+        @if ($departments->hasMorePages())
+            <a href="{{ $departments->nextPageUrl() }}" class="next">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="31.5" y="31.5" width="31" height="31" rx="15.5" transform="rotate(-180 31.5 31.5)" stroke="#CCCCCC" stroke-opacity="0.8"/>
+                    <path d="M7.99984 16.9999L7.99984 14.9999L19.9998 14.9999L14.4998 9.49992L15.9198 8.07992L23.8398 15.9999L15.9198 23.9199L14.4998 22.4999L19.9998 16.9999L7.99984 16.9999Z" fill="#CCCCCC" fill-opacity="0.8"/>
+                </svg>
+            </a>
+        @else
+            <span class="next disabled">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="31.5" y="31.5" width="31" height="31" rx="15.5" transform="rotate(-180 31.5 31.5)" stroke="#CCCCCC" stroke-opacity="0.8"/>
+                    <path d="M7.99984 16.9999L7.99984 14.9999L19.9998 14.9999L14.4998 9.49992L15.9198 8.07992L23.8398 15.9999L15.9198 23.9199L14.4998 22.4999L19.9998 16.9999L7.99984 16.9999Z" fill="#CCCCCC" fill-opacity="0.8"/>
+                </svg>
+            </span>
+        @endif
+
+    </div>
+    {{-- <div class="pagination">
+        @if ($departments->currentPage() > 1)
+            <!-- Previous Page Link -->
+            <a href="{{ $departments->previousPageUrl() }}" class="prev">Prev</a>
+        @else
+            <span class="prev disabled">Prev</span>
+        @endif
+
+        @foreach ($departments as $department)
+            <span>{{ $department->title }}</span>
+        @endforeach
+
+        @if ($departments->hasMorePages())
+            <!-- Next Page Link -->
+            <a href="{{ $departments->nextPageUrl() }}" class="next">Next</a>
+        @else
+            <span class="next disabled">Next</span>
+        @endif
+    </div> --}}
+
 </div>
 @endsection

@@ -26,7 +26,7 @@ class CareerController extends Controller
             $selectedCategory = Vacancy::find($request->category_id);
         }
 
-        $careers = $careers->paginate(10);
+        $careers = $careers->paginate(4);
 
 
         return view('frontend.careers.index',compact(
@@ -52,6 +52,18 @@ class CareerController extends Controller
             'text' => ['nullable', 'max:5000'],
             'cv' => ['required', 'file', 'mimes:pdf,docx,png,jpg,jpeg', 'max:10240'],
             'career_id'=>['required','integer','exists:careers,id'],
+        ],[
+            "name.required"=>__('frontend.name_required'),
+            "name.max"=>__('frontend.name_max'),
+            "email.required"=>__('frontend.surname_required'),
+            "email.demand"=>__('frontend.email_demand'),
+            "phone.required"=>__('frontend.phone_required'),
+            "phone.max"=>__('frontend.phone_max'),
+            "text.max"=>__('frontend.text_max'),
+            "cv.required"=>__('frontend.cv_required'),
+            "cv.types"=>__('frontend.cv_types'),
+            "cv.max"=>__('frontend.cv_max'),
+
         ]);
 
 

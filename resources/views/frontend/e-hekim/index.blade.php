@@ -1,5 +1,6 @@
 @extends('frontend.layouts.layout')
 @section('content')
+ @section('title',$settings['about'])
 <div class="detail-banner">
     <div class="nav">
         <a href="{{route('home')}}" class="logo">
@@ -34,29 +35,29 @@
                 <p>{!!$eHekim?->description!!}</p>
             </div>
         </div>
-        <form action="{{ route('ehekim.apply') }}" method="POST">
+        <form action="{{ route('ehekim.apply', ['language'=>app()->getLocale()]) }}" method="POST">
             @csrf
             <div class="form-main">
                 <div class="form-items">
                     <div class="form-item">
                         <label for=""> {{$settings['name']}}</label>
                         <input type="text"  id="name" name="name" placeholder=" {{$settings['name']}}" value="{{ old('name') }}">
-                        @error('name') <div class="error">{{ $message }}</div> @enderror
+                        @error('name') <div class="error"><p style="color: red">{{ $message }}</p></div> @enderror
                     </div>
                     <div class="form-item">
                         <label for="">{{$settings['surname']}}</label>
                         <input type="text"  id="surname" name="surname" placeholder="{{$settings['surname']}}" value="{{ old('surname') }}">
-                        @error('surname') <div class="error">{{ $message }}</div> @enderror
+                        @error('surname') <div class="error"><p style="color: red">{{ $message }}</p></div> @enderror
                     </div>
                     <div class="form-item">
                         <label for="">{{$settings['mail']}}</label>
                         <input type="text" id="email" name="email" placeholder="{{$settings['mail']}}" value="{{ old('email') }}">
-                        @error('email') <div class="error">{{ $message }}</div> @enderror
+                        @error('email') <div class="error"><p style="color: red">{{ $message }}</p></div> @enderror
                     </div>
                     <div class="form-item">
                         <label for="">{{$settings['phone']}}</label>
                         <input type="text" id="phone" name="phone" placeholder="+994 xx xxx xx xx" value="{{ old('phone') }}">
-                        @error('phone') <div class="error">{{ $message }}</div> @enderror
+                        @error('phone') <div class="error"><p style="color: red">{{ $message }}</p></div> @enderror
                     </div>
                 </div>
                 <div class="e_hekim_socials">

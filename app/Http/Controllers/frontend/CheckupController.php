@@ -34,7 +34,7 @@ class CheckupController extends Controller
             }
         }
 
-        $checkups = $checkups->paginate(10);
+        $checkups = $checkups->paginate(12);
 
 
         return view('frontend.checkups.index', compact(

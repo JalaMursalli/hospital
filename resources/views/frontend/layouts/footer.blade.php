@@ -24,7 +24,7 @@
             <div class="footer-section">
                 <h3 class="sectionTitle">Şöbələr</h3>
                 <div class="section-links">
-                    @foreach ( $departments as $department)
+                    @foreach ( $all_departments as $department)
                     <a href="{{route('showDepartment', ['language'=>app()->getLocale(),'slug'=>$department->slug])}}" class="section-link">{{$department->title}}</a>
                     @endforeach
 

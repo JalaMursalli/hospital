@@ -1,7 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
 @include('frontend.seminars.seminar-banner')
-
+@section('title',$settings['seminar'])
 {{-- @foreach($seminars as $seminar)
 <a href="blog-detail.html" @class(['seminarCart'=>$seminar->type==1, 'infoCart'=>$seminar->type===0])> --}}
 

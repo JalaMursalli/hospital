@@ -1,6 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
     @include('frontend.checkups.checkup-banner')
+    @section('title',$settings['checkup'])
     <div class="checkup-container">
         <div class="checkup-search-container">
             <select id="option_item">

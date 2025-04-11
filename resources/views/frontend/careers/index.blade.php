@@ -1,6 +1,7 @@
 @extends('frontend.layouts.layout')
 @section('content')
 @include('frontend.careers.career-banner')
+@section('title',$settings['career'])
 <div class="vacancy-container">
     <div class="vacancy-search-container">
         <select name="" id="option_item">

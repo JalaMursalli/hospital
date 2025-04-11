@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('contact',$contact);
             $view->with('socials',$socials);
             $view->with('footer',$footer);
-            $view->with('departments',$departments);
+            $view->with('all_departments',$departments);
         });
     }
 
