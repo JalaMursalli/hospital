@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-contacts">
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/location.svg" alt="">
+                    <p>Adil Məmmədov küç. 52 ,Binəqədi</p>
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/mailicon.svg" alt="">
+                    <p>info@hospital.az</p>
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/phoneIcon.svg" alt="">
+                    <p>+994 12 404 76 06</p>
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="socials">
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/fb-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/insta-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/youtube-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/linkedin-white.svg" alt="">
+                    </a>
+                </div>
+                <a href="" class="phone">*7606</a>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <img src="./assets/images/contactBanner.png" alt="" class="bannerBg">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </a>
+            <div class="header-right">
+                <div class="header-lang">
+                    <button class="current-lang" type="button">
+                        Az
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="white" />
+                        </svg>
+                    </button>
+                    <div class="other-langs">
+                        <a href="" class="other-lang-item">En</a>
+                        <a href="" class="other-lang-item">Ru</a>
+                    </div>
+                </div>
+                <button class="hamburger" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="#3D8E86" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="nav-navigate">
+            <div class="nav-navigate-left">
+                <img src="./assets/images/headTitleBg.svg" alt="">
+                <h1 class="page-title">Əlaqə</h1>
+            </div>
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-item">Əsas səhifə</a>
+                <span>
+                    <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.504 0.48H2.344L6.216 4.144L2.344 7.824H0.504L4.376 4.144L0.504 0.48ZM9.129 0.48H10.969L14.841 4.144L10.969 7.824H9.129L13.001 4.144L9.129 0.48Z"
+                            fill="white" />
+                    </svg>
+                </span>
+                <a href="contact.html" class="breadcrumb-item">Əlaqə</a>
+            </div>
+        </div>
+    </div>
+    <div class="aside-menu-container">
+        <div class="aside-menu-top">
+            <div class="header-lang">
+                <button class="current-lang" type="button">
+                    Az
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="white" />
+                    </svg>
+                </button>
+                <div class="other-langs">
+                    <a href="" class="other-lang-item">En</a>
+                    <a href="" class="other-lang-item">Ru</a>
+                </div>
+            </div>
+            <button class="closeMenu" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.36 19.78L12 13.41L5.63997 19.78L4.21997 18.36L10.59 12L4.21997 5.63997L5.63997 4.21997L12 10.59L18.36 4.22997L19.77 5.63997L13.41 12L19.77 18.36L18.36 19.78Z"
+                        fill="#243352" />
+                </svg>
+            </button>
+        </div>
+        <div class="aside-menu">
+            <a href="index.html" class="aside-link">Əsas səhifə</a>
+            <a href="about.html" class="aside-link">Haqqımızda</a>
+            <a href="doctors.html" class="aside-link">Həkimlər</a>
+            <a href="departments.html" class="aside-link">Şöbələr</a>
+            <a href="blog.html" class="aside-link">Blog</a>
+            <a href="contact.html" class="aside-link">Əlaqə</a>
+        </div>
+        <div class="aside-menu-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <a href="" class="phone">*7606</a>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="contact-main">
+            <div class="contact-left">
+                <h2 class="smallTitle">Bizimlə Əlaqə Qurun</h2>
+                <h3 class="largeTitle">Sorğunuzu Göndərin</h3>
+                <div class="short-desc">
+                    <p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elitull am, velit rutrum dictum lobortis,
+                        turpis.</p>
+                </div>
+                <div class="contact-img">
+                    <img src="./assets/images/contactImg.png" alt="">
+                </div>
+            </div>
+            <form action="" class="contact-form">
+                <div class="form-item">
+                    <label for="">Ad Soyad</label>
+                    <input type="text" placeholder="Ad Soyad">
+                </div>
+                <div class="form-item">
+                    <label for="">Mail</label>
+                    <input type="text" placeholder="Loremipsum@gmail.com">
+                </div>
+                <div class="form-item">
+                    <label for="">Əlaqə nömrəsi</label>
+                    <input type="text" placeholder="Nümunə: +994 xx xxx xx xx">
+                </div>
+                <div class="form-item">
+                    <label for="">Mesajınız</label>
+                    <textarea name="" id="" placeholder="Mesajınız"></textarea>
+                </div>
+                <button class="sendContact" type="submit">
+                    Send
+                </button>
+            </form>
+        </div>
+        <div class="contact-boxes">
+            <div class="contact-box">
+                <div class="box-inner">
+                    <h2 class="box-title">
+                        <img src="./assets/icons/location-green.svg" alt="">
+                        Adress
+                    </h2>
+                    <p>221B Baker street</p>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="box-inner">
+                    <h2 class="box-title">
+                        <img src="./assets/icons/mailicon-green.svg" alt="">
+                        Email
+                    </h2>
+                    <a href="">numune@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="box-inner">
+                    <h2 class="box-title">
+                        <img src="./assets/icons/phoneIcon-green.svg" alt="">
+                        Business Phone
+                    </h2>
+                    <a href="">+994 12 34 56 78</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.5237691155!2d49.69015031780891!3d40.394475511010704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2zQmFrxLE!5e0!3m2!1saz!2saz!4v1740574507623!5m2!1saz!2saz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <h2 class="footerTitle">Sağlamlığınız Bizim Prioritetimizdir</h2>
+                <div class="short-desc">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text .</p>
+                </div>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Quick Links</h3>
+                    <div class="section-links">
+                        <a href="index.html" class="section-link">Əsas səhifə</a>
+                        <a href="about.html" class="section-link">Haqqımızda</a>
+                        <a href="departments.html" class="section-link">Şöbələr</a>
+                        <a href="blog.html" class="section-link">Blog</a>
+                        <a href="doctors.html" class="section-link">Həkimlərimiz</a>
+                        <a href="contact.html" class="section-link">Əlaqə</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Şöbələr</h3>
+                    <div class="section-links">
+                        <a href="departments-detail.html" class="section-link">Cərrahiyə</a>
+                        <a href="departments-detail.html" class="section-link">Analiz</a>
+                        <a href="departments-detail.html" class="section-link">Stomotologiya</a>
+                        <a href="departments-detail.html" class="section-link">Urologiya</a>
+                        <a href="departments-detail.html" class="section-link">Nevrologiya</a>
+                        <a href="departments-detail.html" class="section-link">Reanimasiya</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="contactTitle">Əlaqə</h3>
+                    <div class="contact-links">
+                        <a href="" class="hotline">*7606</a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/location.svg" alt="">
+                            Adil Məmmədov küç. 52 ,Binəqədi
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/mailicon.svg" alt="">
+                            info@hospital.az
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/phoneIcon.svg" alt="">
+                            +994 12 404 76 06
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-bottom-text">
+                <p>All Rights Reserved © 2024 <a href="https://166tech.az/">166Tech</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect()
+        })
+    </script>
+    <script src="./assets/swiper/swiper.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

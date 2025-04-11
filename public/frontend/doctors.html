@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-contacts">
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/location.svg" alt="">  
+                    <p>Adil Məmmədov küç. 52 ,Binəqədi</p>                   
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/mailicon.svg" alt="">
+                    <p>info@hospital.az</p>                   
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/phoneIcon.svg" alt="">                         
+                    <p>+994 12 404 76 06</p>                   
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="socials">
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/fb-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/insta-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/youtube-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/linkedin-white.svg" alt="">
+                    </a>
+                </div>
+                <a href="" class="phone">*7606</a>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <img src="./assets/images/doctorBanner2.png" alt="" class="bannerBg">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </a>
+            <div class="header-right">
+                <div class="header-lang">
+                    <button class="current-lang" type="button">
+                        Az 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+                        </svg>                            
+                    </button>
+                    <div class="other-langs">
+                        <a href="" class="other-lang-item">En</a>
+                        <a href="" class="other-lang-item">Ru</a>
+                    </div>
+                </div>
+                <button class="hamburger" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="#3D8E86"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+        <div class="nav-navigate">
+            <div class="nav-navigate-left">
+                <img src="./assets/images/headTitleBg.svg" alt="">
+                <h1 class="page-title">Həkimlər</h1>
+            </div>
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-item">Əsas səhifə</a>
+                <span>
+                    <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.504 0.48H2.344L6.216 4.144L2.344 7.824H0.504L4.376 4.144L0.504 0.48ZM9.129 0.48H10.969L14.841 4.144L10.969 7.824H9.129L13.001 4.144L9.129 0.48Z" fill="white"/>
+                    </svg>
+                </span>
+                <a href="doctors.html" class="breadcrumb-item">Həkimlər</a>
+            </div>
+        </div>
+    </div>
+    <div class="aside-menu-container">
+        <div class="aside-menu-top">
+            <div class="header-lang">
+                <button class="current-lang" type="button">
+                    Az 
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+                    </svg>                            
+                </button>
+                <div class="other-langs">
+                    <a href="" class="other-lang-item">En</a>
+                    <a href="" class="other-lang-item">Ru</a>
+                </div>
+            </div>
+            <button class="closeMenu" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.36 19.78L12 13.41L5.63997 19.78L4.21997 18.36L10.59 12L4.21997 5.63997L5.63997 4.21997L12 10.59L18.36 4.22997L19.77 5.63997L13.41 12L19.77 18.36L18.36 19.78Z" fill="#243352"/>
+                </svg>                                          
+            </button>
+        </div>
+        <div class="aside-menu">
+            <a href="index.html" class="aside-link">Əsas səhifə</a>
+            <a href="about.html" class="aside-link">Haqqımızda</a>
+            <a href="doctors.html" class="aside-link">Həkimlər</a>
+            <a href="departments.html" class="aside-link">Şöbələr</a>
+            <a href="blog.html" class="aside-link">Blog</a>
+            <a href="contact.html" class="aside-link">Əlaqə</a>
+        </div>
+        <div class="aside-menu-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <a href="" class="phone">*7606</a>
+        </div>
+    </div>
+    <div class="doctors-container">
+        <div class="all-doctors">
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor1.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Leyla Aliyeva</h2>
+                    <p class="doctor-specialty">Nevrolog</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor2.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Kənan Rahmanov</h2>
+                    <p class="doctor-specialty">Urolog</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor3.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Nailə Məmmədova</h2>
+                    <p class="doctor-specialty">Ginekolog</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor4.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Farid Camalov</h2>
+                    <p class="doctor-specialty">Stomotoloq</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor5.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Nazrin Bagirova</h2>
+                    <p class="doctor-specialty">Lor</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor6.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Kamalə Məmmədli</h2>
+                    <p class="doctor-specialty">Ümumi cərrah</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor7.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Sabir Aliyev</h2>
+                    <p class="doctor-specialty">Nevrolog</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor8.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Ayla Kərimova</h2>
+                    <p class="doctor-specialty">Radioloq</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="doctor-detail.html" class="doctor-cart">
+                <div class="cart-main-container">
+                    <div class="cart-img">
+                        <img src="./assets/images/doctor9.png" alt="">
+                    </div>
+                    <h2 class="doctor-name">Aybəniz Vəkiyeva</h2>
+                    <p class="doctor-specialty">Fizioterapevt</p>
+                </div>
+                <div class="cart-body">
+                    <div class="cart-detail">
+
+                        <div class="short-desc">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart-body-right">
+                        <div class="decor"></div>
+                        <div class="cart-direction-container">
+                            <div class="cart-direction">
+                                <span>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.6669 21.6666L6.6669 18.3333L26.6669 18.3333L17.5002 9.16662L19.8669 6.79995L33.0669 20L19.8669 33.2L17.5002 30.8333L26.6669 21.6666L6.6669 21.6666Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="pagination">
+            <a href="" class="prev">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#CCCCCC" stroke-opacity="0.8"/>
+                    <path d="M24.0002 15.0001V17.0001H12.0002L17.5002 22.5001L16.0802 23.9201L8.16016 16.0001L16.0802 8.08008L17.5002 9.50008L12.0002 15.0001H24.0002Z" fill="#CCCCCC" fill-opacity="0.8"/>
+                </svg>                    
+            </a>
+            <div class="pagination-links">
+                <!-- Itemlar-da reqem olmayacaq. ancaq daire olacaq onuda style ile yaziram -->
+                <a href="" class="pagination-item active"></a>
+                <a href="" class="pagination-item"></a>
+                <a href="" class="pagination-item"></a>
+                <a href="" class="pagination-item"></a>
+            </div>
+            <a href="" class="next">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="31.5" y="31.5" width="31" height="31" rx="15.5" transform="rotate(-180 31.5 31.5)" stroke="#CCCCCC" stroke-opacity="0.8"/>
+                    <path d="M7.99984 16.9999L7.99984 14.9999L19.9998 14.9999L14.4998 9.49992L15.9198 8.07992L23.8398 15.9999L15.9198 23.9199L14.4998 22.4999L19.9998 16.9999L7.99984 16.9999Z" fill="#CCCCCC" fill-opacity="0.8"/>
+                </svg>                                    
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <h2 class="footerTitle">Sağlamlığınız  Bizim Prioritetimizdir</h2>
+                <div class="short-desc">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                </div>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Quick Links</h3>
+                    <div class="section-links">
+                        <a href="index.html" class="section-link">Əsas səhifə</a>
+                        <a href="about.html" class="section-link">Haqqımızda</a>
+                        <a href="departments.html" class="section-link">Şöbələr</a>
+                        <a href="blog.html" class="section-link">Blog</a>
+                        <a href="doctors.html" class="section-link">Həkimlərimiz</a>
+                        <a href="contact.html" class="section-link">Əlaqə</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Şöbələr</h3>
+                    <div class="section-links">
+                        <a href="departments-detail.html" class="section-link">Cərrahiyə</a>
+                        <a href="departments-detail.html" class="section-link">Analiz</a>
+                        <a href="departments-detail.html" class="section-link">Stomotologiya</a>
+                        <a href="departments-detail.html" class="section-link">Urologiya</a>
+                        <a href="departments-detail.html" class="section-link">Nevrologiya</a>
+                        <a href="departments-detail.html" class="section-link">Reanimasiya</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="contactTitle">Əlaqə</h3>
+                    <div class="contact-links">
+                        <a href="" class="hotline">*7606</a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/location.svg" alt="">
+                            Adil Məmmədov küç. 52 ,Binəqədi
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/mailicon.svg" alt="">
+                            info@hospital.az
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/phoneIcon.svg" alt="">
+                            +994 12 404 76 06
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-bottom-text">
+                <p>All Rights Reserved © 2024  <a href="https://166tech.az/">166Tech</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect()
+        })
+    </script>
+    <script src="./assets/swiper/swiper.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

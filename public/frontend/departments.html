@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-contacts">
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/location.svg" alt="">  
+                    <p>Adil Məmmədov küç. 52 ,Binəqədi</p>                   
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/mailicon.svg" alt="">
+                    <p>info@hospital.az</p>                   
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/phoneIcon.svg" alt="">                         
+                    <p>+994 12 404 76 06</p>                   
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="socials">
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/fb-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/insta-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/youtube-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/linkedin-white.svg" alt="">
+                    </a>
+                </div>
+                <a href="" class="phone">*7606</a>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <img src="./assets/images/departmentBanner.png" alt="" class="bannerBg">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </a>
+            <div class="header-right">
+                <div class="header-lang">
+                    <button class="current-lang" type="button">
+                        Az 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+                        </svg>                            
+                    </button>
+                    <div class="other-langs">
+                        <a href="" class="other-lang-item">En</a>
+                        <a href="" class="other-lang-item">Ru</a>
+                    </div>
+                </div>
+                <button class="hamburger" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="#3D8E86"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+        <div class="nav-navigate">
+            <div class="nav-navigate-left">
+                <h1 class="page-title">Şöbələr</h1>
+            </div>
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-item">Əsas səhifə</a>
+                <span>
+                    <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.504 0.48H2.344L6.216 4.144L2.344 7.824H0.504L4.376 4.144L0.504 0.48ZM9.129 0.48H10.969L14.841 4.144L10.969 7.824H9.129L13.001 4.144L9.129 0.48Z" fill="white"/>
+                    </svg>
+                </span>
+                <a href="departments.html" class="breadcrumb-item">Şöbələr</a>
+            </div>
+        </div>
+    </div>
+    <div class="aside-menu-container">
+        <div class="aside-menu-top">
+            <div class="header-lang">
+                <button class="current-lang" type="button">
+                    Az 
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+                    </svg>                            
+                </button>
+                <div class="other-langs">
+                    <a href="" class="other-lang-item">En</a>
+                    <a href="" class="other-lang-item">Ru</a>
+                </div>
+            </div>
+            <button class="closeMenu" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.36 19.78L12 13.41L5.63997 19.78L4.21997 18.36L10.59 12L4.21997 5.63997L5.63997 4.21997L12 10.59L18.36 4.22997L19.77 5.63997L13.41 12L19.77 18.36L18.36 19.78Z" fill="#243352"/>
+                </svg>                                          
+            </button>
+        </div>
+        <div class="aside-menu">
+            <a href="index.html" class="aside-link">Əsas səhifə</a>
+            <a href="about.html" class="aside-link">Haqqımızda</a>
+            <a href="doctors.html" class="aside-link">Həkimlər</a>
+            <a href="departments.html" class="aside-link">Şöbələr</a>
+            <a href="blog.html" class="aside-link">Blog</a>
+            <a href="contact.html" class="aside-link">Əlaqə</a>
+        </div>
+        <div class="aside-menu-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <a href="" class="phone">*7606</a>
+        </div>
+    </div>
+    <div class="departments-container">
+        <div class="departments-head">
+            <h2 class="headTitle">Bütün Şöbələr</h2>
+            <form action="" class="search-department-form">
+                <input type="text" placeholder="Şöbə axtar">
+                <button class="search-department-submit" type="submit">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5005 14H14.7105L14.4305 13.73C15.0554 13.0039 15.5122 12.1487 15.768 11.2256C16.0239 10.3024 16.0725 9.33413 15.9105 8.38998C15.4405 5.60998 13.1205 3.38997 10.3205 3.04997C9.33608 2.92544 8.33625 3.02775 7.39749 3.34906C6.45872 3.67038 5.60591 4.20219 4.90429 4.90381C4.20268 5.60542 3.67087 6.45824 3.34955 7.397C3.02823 8.33576 2.92593 9.33559 3.05046 10.32C3.39046 13.12 5.61046 15.44 8.39046 15.91C9.33462 16.072 10.3029 16.0234 11.2261 15.7675C12.1492 15.5117 13.0044 15.0549 13.7305 14.43L14.0005 14.71V15.5L18.2505 19.75C18.6605 20.16 19.3305 20.16 19.7405 19.75C20.1505 19.34 20.1505 18.67 19.7405 18.26L15.5005 14ZM9.50046 14C7.01046 14 5.00046 11.99 5.00046 9.49997C5.00046 7.00997 7.01046 4.99997 9.50046 4.99997C11.9905 4.99997 14.0005 7.00997 14.0005 9.49997C14.0005 11.99 11.9905 14 9.50046 14Z" fill="#3D8E86"/>
+                    </svg>                        
+                </button>
+            </form>
+        </div>
+        <div class="department-boxes">
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/teciliYardimSobe.svg" alt="">
+                </div>
+                <p>Təcili yardım</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/nevrologiyaIcon.svg" alt="">
+                </div>
+                <p>Nevrologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/poliklinikaSobe.svg" alt="">
+                </div>
+                <p>Poliklinika</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/stomotologiyaIcon.svg" alt="">
+                </div>
+                <p>Stomotologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/fizioterapiya.svg" alt="">
+                </div>
+                <p>Fizioterapiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/urologiya.svg" alt="">
+                </div>
+                <p>Urologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/travmatologiya.svg" alt="">
+                </div>
+                <p>Travmatologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/cerrahiye.svg" alt="">
+                </div>
+                <p>Cərrahiyyə</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/reanimasiya.svg" alt="">
+                </div>
+                <p>Reanimasiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/ginekologiya.svg" alt="">
+                </div>
+                <p>Ginekologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/kardiologiya.svg" alt="">
+                </div>
+                <p>Kardiologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/terapiya.svg" alt="">
+                </div>
+                <p>Terapiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/neyrocerrahiye.svg" alt="">
+                </div>
+                <p>Neyrocerrahiyyə</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/laboratoriyaSobe.svg" alt="">
+                </div>
+                <p>Laboratoriya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/oftalmologiya.svg" alt="">
+                </div>
+                <p>Oftalmologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/pediatriya.svg" alt="">
+                </div>
+                <p>Pediatriya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/radiologiya.svg" alt="">
+                </div>
+                <p>Radiologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/endrokrinologiya.svg" alt="">
+                </div>
+                <p>Endrokrinologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/qastroenterologiya.svg" alt="">
+                </div>
+                <p>Qastroenterologiya</p>
+            </a>
+            <a href="departments-detail.html" class="department-box">
+                <div class="icon">
+                    <img src="./assets/icons/otorinolarinqologiya.svg" alt="">
+                </div>
+                <p>Otorinolarinqologiya</p>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <h2 class="footerTitle">Sağlamlığınız  Bizim Prioritetimizdir</h2>
+                <div class="short-desc">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                </div>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Quick Links</h3>
+                    <div class="section-links">
+                        <a href="index.html" class="section-link">Əsas səhifə</a>
+                        <a href="about.html" class="section-link">Haqqımızda</a>
+                        <a href="departments.html" class="section-link">Şöbələr</a>
+                        <a href="blog.html" class="section-link">Blog</a>
+                        <a href="doctors.html" class="section-link">Həkimlərimiz</a>
+                        <a href="contact.html" class="section-link">Əlaqə</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Şöbələr</h3>
+                    <div class="section-links">
+                        <a href="departments-detail.html" class="section-link">Cərrahiyə</a>
+                        <a href="departments-detail.html" class="section-link">Analiz</a>
+                        <a href="departments-detail.html" class="section-link">Stomotologiya</a>
+                        <a href="departments-detail.html" class="section-link">Urologiya</a>
+                        <a href="departments-detail.html" class="section-link">Nevrologiya</a>
+                        <a href="departments-detail.html" class="section-link">Reanimasiya</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="contactTitle">Əlaqə</h3>
+                    <div class="contact-links">
+                        <a href="" class="hotline">*7606</a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/location.svg" alt="">
+                            Adil Məmmədov küç. 52 ,Binəqədi
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/mailicon.svg" alt="">
+                            info@hospital.az
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/phoneIcon.svg" alt="">
+                            +994 12 404 76 06
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-bottom-text">
+                <p>All Rights Reserved © 2024  <a href="https://166tech.az/">166Tech</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect()
+        })
+    </script>
+    <script src="./assets/swiper/swiper.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

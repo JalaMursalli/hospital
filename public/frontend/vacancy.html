@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-contacts">
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/location.svg" alt="">  
+                    <p>Adil Məmmədov küç. 52 ,Binəqədi</p>                   
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/mailicon.svg" alt="">
+                    <p>info@hospital.az</p>                   
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/phoneIcon.svg" alt="">                         
+                    <p>+994 12 404 76 06</p>                   
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="socials">
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/fb-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/insta-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/youtube-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/linkedin-white.svg" alt="">
+                    </a>
+                </div>
+                <a href="" class="phone">*7606</a>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <img src="./assets/images/vacancyBanner.png" alt="" class="bannerBg">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </a>
+            <div class="header-right">
+                <div class="header-lang">
+                    <button class="current-lang" type="button">
+                        Az 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+                        </svg>                            
+                    </button>
+                    <div class="other-langs">
+                        <a href="" class="other-lang-item">En</a>
+                        <a href="" class="other-lang-item">Ru</a>
+                    </div>
+                </div>
+                <button class="hamburger" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="#3D8E86"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+        <div class="nav-navigate">
+            <div class="nav-navigate-left">
+                <img src="./assets/images/headTitleBg.svg" alt="">
+                <h1 class="page-title">Vakansiyalar</h1>
+            </div>
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-item">Əsas səhifə</a>
+                <span>
+                    <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.504 0.48H2.344L6.216 4.144L2.344 7.824H0.504L4.376 4.144L0.504 0.48ZM9.129 0.48H10.969L14.841 4.144L10.969 7.824H9.129L13.001 4.144L9.129 0.48Z" fill="white"/>
+                    </svg>
+                </span>
+                <a href="vacancy.html" class="breadcrumb-item">Vakansiyalar</a>
+            </div>
+        </div>
+    </div>
+    <div class="aside-menu-container">
+        <div class="aside-menu-top">
+            <div class="header-lang">
+                <button class="current-lang" type="button">
+                    Az 
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+                    </svg>                            
+                </button>
+                <div class="other-langs">
+                    <a href="" class="other-lang-item">En</a>
+                    <a href="" class="other-lang-item">Ru</a>
+                </div>
+            </div>
+            <button class="closeMenu" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.36 19.78L12 13.41L5.63997 19.78L4.21997 18.36L10.59 12L4.21997 5.63997L5.63997 4.21997L12 10.59L18.36 4.22997L19.77 5.63997L13.41 12L19.77 18.36L18.36 19.78Z" fill="#243352"/>
+                </svg>                                          
+            </button>
+        </div>
+        <div class="aside-menu">
+            <a href="index.html" class="aside-link">Əsas səhifə</a>
+            <a href="about.html" class="aside-link">Haqqımızda</a>
+            <a href="doctors.html" class="aside-link">Həkimlər</a>
+            <a href="departments.html" class="aside-link">Şöbələr</a>
+            <a href="blog.html" class="aside-link">Blog</a>
+            <a href="contact.html" class="aside-link">Əlaqə</a>
+        </div>
+        <div class="aside-menu-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <a href="" class="phone">*7606</a>
+        </div>
+    </div>
+    <div class="vacancy-container">
+        <div class="vacancy-search-container">
+            <select name="" id="">
+                <option value="">Hamısı</option>
+                <option value="">Vakansiya1</option>
+                <option value="">Vakansiya2</option>
+                <option value="">Vakansiya3</option>
+                <option value="">Vakansiya4</option>
+            </select>
+            <form class="vacancy-search">
+                <input type="text" placeholder="Vakansiya axtar">
+                <button type="submit" class="submitVacancySearch">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.4995 14H14.7095L14.4295 13.73C15.0544 13.0039 15.5112 12.1487 15.767 11.2256C16.0229 10.3024 16.0715 9.33413 15.9095 8.38998C15.4395 5.60998 13.1195 3.38997 10.3195 3.04997C9.3351 2.92544 8.33527 3.02775 7.39651 3.34906C6.45775 3.67038 5.60493 4.20219 4.90332 4.90381C4.20171 5.60542 3.66989 6.45824 3.34858 7.397C3.02726 8.33576 2.92495 9.33559 3.04949 10.32C3.38949 13.12 5.60949 15.44 8.38949 15.91C9.33364 16.072 10.3019 16.0234 11.2251 15.7675C12.1483 15.5117 13.0035 15.0549 13.7295 14.43L13.9995 14.71V15.5L18.2495 19.75C18.6595 20.16 19.3295 20.16 19.7395 19.75C20.1495 19.34 20.1495 18.67 19.7395 18.26L15.4995 14ZM9.49949 14C7.00949 14 4.99949 11.99 4.99949 9.49997C4.99949 7.00997 7.00949 4.99997 9.49949 4.99997C11.9895 4.99997 13.9995 7.00997 13.9995 9.49997C13.9995 11.99 11.9895 14 9.49949 14Z" fill="#3D8E86"/>
+                    </svg>                    
+                </button>
+            </form>
+        </div>
+        <div class="all-vacancy">
+            <a href="vacancyDetail.html" class="vacancy-item">
+                <div class="vacancy-img">
+                    <img src="./assets/images/vacancyCart1.png" alt="">
+                </div>
+                <div class="vacancy-body">
+                    <div class="bodyMain">
+                        <div class="bodyMain-left">
+                            <h2>Call center operatoru</h2>
+                            <div class="vacAdress">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5592 8.5599C13.5592 9.44395 13.2081 10.2918 12.5829 10.9169C11.9578 11.542 11.11 11.8932 10.2259 11.8932C9.34186 11.8932 8.49401 11.542 7.86889 10.9169C7.24377 10.2918 6.89258 9.44395 6.89258 8.5599C6.89258 7.67584 7.24377 6.82799 7.86889 6.20287C8.49401 5.57775 9.34186 5.22656 10.2259 5.22656C11.11 5.22656 11.9578 5.57775 12.5829 6.20287C13.2081 6.82799 13.5592 7.67584 13.5592 8.5599ZM11.8926 8.5599C11.8926 9.00192 11.717 9.42585 11.4044 9.73841C11.0919 10.051 10.6679 10.2266 10.2259 10.2266C9.78388 10.2266 9.35996 10.051 9.0474 9.73841C8.73484 9.42585 8.55924 9.00192 8.55924 8.5599C8.55924 8.11787 8.73484 7.69394 9.0474 7.38138C9.35996 7.06882 9.78388 6.89323 10.2259 6.89323C10.6679 6.89323 11.0919 7.06882 11.4044 7.38138C11.717 7.69394 11.8926 8.11787 11.8926 8.5599Z" fill="#BBBBBB"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.82834 13.765C3.75404 12.7421 3.00717 11.4237 2.6822 9.97635C2.35722 8.52902 2.46873 7.01783 3.00262 5.63387C3.53651 4.24992 4.4688 3.05536 5.6816 2.20125C6.8944 1.34715 8.33323 0.871869 9.81615 0.835506C11.2991 0.799144 12.7595 1.20334 14.0127 1.99697C15.2659 2.79061 16.2556 3.93804 16.8567 5.29416C17.4578 6.65029 17.6432 8.1542 17.3895 9.61572C17.1359 11.0772 16.4546 12.4307 15.4317 13.505L10.26 18.9367L4.82834 13.765ZM14.225 12.3558L10.2025 16.5808L5.9775 12.5583C5.14198 11.7628 4.56112 10.7373 4.30838 9.61165C4.05564 8.48597 4.14237 7.31063 4.5576 6.23424C4.97283 5.15786 5.69792 4.22877 6.64117 3.56447C7.58442 2.90017 8.70348 2.53048 9.85683 2.50216C11.0102 2.47385 12.146 2.78817 13.1208 3.40538C14.0955 4.02259 14.8653 4.91497 15.3328 5.96968C15.8004 7.02439 15.9447 8.19406 15.7475 9.33078C15.5503 10.4675 15.0205 11.5202 14.225 12.3558Z" fill="#BBBBBB"/>
+                                </svg>    
+                                <p>Adil Məmmədov küç.52, Binəqədi</p>
+                            </div>
+                        </div>
+                        <div class="work-time">
+                            <p>09:00-18:00</p>
+                        </div>
+                    </div>
+                    <div class="vacancy-desc">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <!-- Elan active olmayanda bu gorsensin -->
+                <div class="nonActive">Aktiv deyil</div>
+            </a>
+            <a href="vacancyDetail.html" class="vacancy-item">
+                <div class="vacancy-img">
+                    <img src="./assets/images/vacancyCart2.png" alt="">
+                </div>
+                <div class="vacancy-body">
+                    <div class="bodyMain">
+                        <div class="bodyMain-left">
+                            <h2>Əczaçı</h2>
+                            <div class="vacAdress">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5592 8.5599C13.5592 9.44395 13.2081 10.2918 12.5829 10.9169C11.9578 11.542 11.11 11.8932 10.2259 11.8932C9.34186 11.8932 8.49401 11.542 7.86889 10.9169C7.24377 10.2918 6.89258 9.44395 6.89258 8.5599C6.89258 7.67584 7.24377 6.82799 7.86889 6.20287C8.49401 5.57775 9.34186 5.22656 10.2259 5.22656C11.11 5.22656 11.9578 5.57775 12.5829 6.20287C13.2081 6.82799 13.5592 7.67584 13.5592 8.5599ZM11.8926 8.5599C11.8926 9.00192 11.717 9.42585 11.4044 9.73841C11.0919 10.051 10.6679 10.2266 10.2259 10.2266C9.78388 10.2266 9.35996 10.051 9.0474 9.73841C8.73484 9.42585 8.55924 9.00192 8.55924 8.5599C8.55924 8.11787 8.73484 7.69394 9.0474 7.38138C9.35996 7.06882 9.78388 6.89323 10.2259 6.89323C10.6679 6.89323 11.0919 7.06882 11.4044 7.38138C11.717 7.69394 11.8926 8.11787 11.8926 8.5599Z" fill="#BBBBBB"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.82834 13.765C3.75404 12.7421 3.00717 11.4237 2.6822 9.97635C2.35722 8.52902 2.46873 7.01783 3.00262 5.63387C3.53651 4.24992 4.4688 3.05536 5.6816 2.20125C6.8944 1.34715 8.33323 0.871869 9.81615 0.835506C11.2991 0.799144 12.7595 1.20334 14.0127 1.99697C15.2659 2.79061 16.2556 3.93804 16.8567 5.29416C17.4578 6.65029 17.6432 8.1542 17.3895 9.61572C17.1359 11.0772 16.4546 12.4307 15.4317 13.505L10.26 18.9367L4.82834 13.765ZM14.225 12.3558L10.2025 16.5808L5.9775 12.5583C5.14198 11.7628 4.56112 10.7373 4.30838 9.61165C4.05564 8.48597 4.14237 7.31063 4.5576 6.23424C4.97283 5.15786 5.69792 4.22877 6.64117 3.56447C7.58442 2.90017 8.70348 2.53048 9.85683 2.50216C11.0102 2.47385 12.146 2.78817 13.1208 3.40538C14.0955 4.02259 14.8653 4.91497 15.3328 5.96968C15.8004 7.02439 15.9447 8.19406 15.7475 9.33078C15.5503 10.4675 15.0205 11.5202 14.225 12.3558Z" fill="#BBBBBB"/>
+                                </svg>    
+                                <p>Adil Məmmədov küç.52, Binəqədi</p>
+                            </div>
+                        </div>
+                        <div class="work-time">
+                            <p>09:00-18:00</p>
+                        </div>
+                    </div>
+                    <div class="vacancy-desc">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="vacancyDetail.html" class="vacancy-item">
+                <div class="vacancy-img">
+                    <img src="./assets/images/vacancyCart3.png" alt="">
+                </div>
+                <div class="vacancy-body">
+                    <div class="bodyMain">
+                        <div class="bodyMain-left">
+                            <h2>SMM (Sosial Media Menecmenti) qadın</h2>
+                            <div class="vacAdress">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5592 8.5599C13.5592 9.44395 13.2081 10.2918 12.5829 10.9169C11.9578 11.542 11.11 11.8932 10.2259 11.8932C9.34186 11.8932 8.49401 11.542 7.86889 10.9169C7.24377 10.2918 6.89258 9.44395 6.89258 8.5599C6.89258 7.67584 7.24377 6.82799 7.86889 6.20287C8.49401 5.57775 9.34186 5.22656 10.2259 5.22656C11.11 5.22656 11.9578 5.57775 12.5829 6.20287C13.2081 6.82799 13.5592 7.67584 13.5592 8.5599ZM11.8926 8.5599C11.8926 9.00192 11.717 9.42585 11.4044 9.73841C11.0919 10.051 10.6679 10.2266 10.2259 10.2266C9.78388 10.2266 9.35996 10.051 9.0474 9.73841C8.73484 9.42585 8.55924 9.00192 8.55924 8.5599C8.55924 8.11787 8.73484 7.69394 9.0474 7.38138C9.35996 7.06882 9.78388 6.89323 10.2259 6.89323C10.6679 6.89323 11.0919 7.06882 11.4044 7.38138C11.717 7.69394 11.8926 8.11787 11.8926 8.5599Z" fill="#BBBBBB"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.82834 13.765C3.75404 12.7421 3.00717 11.4237 2.6822 9.97635C2.35722 8.52902 2.46873 7.01783 3.00262 5.63387C3.53651 4.24992 4.4688 3.05536 5.6816 2.20125C6.8944 1.34715 8.33323 0.871869 9.81615 0.835506C11.2991 0.799144 12.7595 1.20334 14.0127 1.99697C15.2659 2.79061 16.2556 3.93804 16.8567 5.29416C17.4578 6.65029 17.6432 8.1542 17.3895 9.61572C17.1359 11.0772 16.4546 12.4307 15.4317 13.505L10.26 18.9367L4.82834 13.765ZM14.225 12.3558L10.2025 16.5808L5.9775 12.5583C5.14198 11.7628 4.56112 10.7373 4.30838 9.61165C4.05564 8.48597 4.14237 7.31063 4.5576 6.23424C4.97283 5.15786 5.69792 4.22877 6.64117 3.56447C7.58442 2.90017 8.70348 2.53048 9.85683 2.50216C11.0102 2.47385 12.146 2.78817 13.1208 3.40538C14.0955 4.02259 14.8653 4.91497 15.3328 5.96968C15.8004 7.02439 15.9447 8.19406 15.7475 9.33078C15.5503 10.4675 15.0205 11.5202 14.225 12.3558Z" fill="#BBBBBB"/>
+                                </svg>    
+                                <p>Adil Məmmədov küç.52, Binəqədi</p>
+                            </div>
+                        </div>
+                        <div class="work-time">
+                            <p>09:00-18:00</p>
+                        </div>
+                    </div>
+                    <div class="vacancy-desc">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="vacancyDetail.html" class="vacancy-item">
+                <div class="vacancy-img">
+                    <img src="./assets/images/vacancyCart4.png" alt="">
+                </div>
+                <div class="vacancy-body">
+                    <div class="bodyMain">
+                        <div class="bodyMain-left">
+                            <h2>Reception</h2>
+                            <div class="vacAdress">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5592 8.5599C13.5592 9.44395 13.2081 10.2918 12.5829 10.9169C11.9578 11.542 11.11 11.8932 10.2259 11.8932C9.34186 11.8932 8.49401 11.542 7.86889 10.9169C7.24377 10.2918 6.89258 9.44395 6.89258 8.5599C6.89258 7.67584 7.24377 6.82799 7.86889 6.20287C8.49401 5.57775 9.34186 5.22656 10.2259 5.22656C11.11 5.22656 11.9578 5.57775 12.5829 6.20287C13.2081 6.82799 13.5592 7.67584 13.5592 8.5599ZM11.8926 8.5599C11.8926 9.00192 11.717 9.42585 11.4044 9.73841C11.0919 10.051 10.6679 10.2266 10.2259 10.2266C9.78388 10.2266 9.35996 10.051 9.0474 9.73841C8.73484 9.42585 8.55924 9.00192 8.55924 8.5599C8.55924 8.11787 8.73484 7.69394 9.0474 7.38138C9.35996 7.06882 9.78388 6.89323 10.2259 6.89323C10.6679 6.89323 11.0919 7.06882 11.4044 7.38138C11.717 7.69394 11.8926 8.11787 11.8926 8.5599Z" fill="#BBBBBB"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.82834 13.765C3.75404 12.7421 3.00717 11.4237 2.6822 9.97635C2.35722 8.52902 2.46873 7.01783 3.00262 5.63387C3.53651 4.24992 4.4688 3.05536 5.6816 2.20125C6.8944 1.34715 8.33323 0.871869 9.81615 0.835506C11.2991 0.799144 12.7595 1.20334 14.0127 1.99697C15.2659 2.79061 16.2556 3.93804 16.8567 5.29416C17.4578 6.65029 17.6432 8.1542 17.3895 9.61572C17.1359 11.0772 16.4546 12.4307 15.4317 13.505L10.26 18.9367L4.82834 13.765ZM14.225 12.3558L10.2025 16.5808L5.9775 12.5583C5.14198 11.7628 4.56112 10.7373 4.30838 9.61165C4.05564 8.48597 4.14237 7.31063 4.5576 6.23424C4.97283 5.15786 5.69792 4.22877 6.64117 3.56447C7.58442 2.90017 8.70348 2.53048 9.85683 2.50216C11.0102 2.47385 12.146 2.78817 13.1208 3.40538C14.0955 4.02259 14.8653 4.91497 15.3328 5.96968C15.8004 7.02439 15.9447 8.19406 15.7475 9.33078C15.5503 10.4675 15.0205 11.5202 14.225 12.3558Z" fill="#BBBBBB"/>
+                                </svg>    
+                                <p>Adil Məmmədov küç.52, Binəqədi</p>
+                            </div>
+                        </div>
+                        <div class="work-time">
+                            <p>09:00-18:00</p>
+                        </div>
+                    </div>
+                    <div class="vacancy-desc">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="pagination">
+            <a href="" class="prev">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="#CCCCCC" stroke-opacity="0.8"/>
+                    <path d="M24.0002 15.0001V17.0001H12.0002L17.5002 22.5001L16.0802 23.9201L8.16016 16.0001L16.0802 8.08008L17.5002 9.50008L12.0002 15.0001H24.0002Z" fill="#CCCCCC" fill-opacity="0.8"/>
+                </svg>                    
+            </a>
+            <div class="pagination-links">
+                <!-- Itemlar-da reqem olmayacaq. ancaq daire olacaq onuda style ile yaziram -->
+                <a href="" class="pagination-item active"></a>
+                <a href="" class="pagination-item"></a>
+                <a href="" class="pagination-item"></a>
+                <a href="" class="pagination-item"></a>
+            </div>
+            <a href="" class="next">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="31.5" y="31.5" width="31" height="31" rx="15.5" transform="rotate(-180 31.5 31.5)" stroke="#CCCCCC" stroke-opacity="0.8"/>
+                    <path d="M7.99984 16.9999L7.99984 14.9999L19.9998 14.9999L14.4998 9.49992L15.9198 8.07992L23.8398 15.9999L15.9198 23.9199L14.4998 22.4999L19.9998 16.9999L7.99984 16.9999Z" fill="#CCCCCC" fill-opacity="0.8"/>
+                </svg>                                    
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <h2 class="footerTitle">Sağlamlığınız  Bizim Prioritetimizdir</h2>
+                <div class="short-desc">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                </div>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Quick Links</h3>
+                    <div class="section-links">
+                        <a href="index.html" class="section-link">Əsas səhifə</a>
+                        <a href="about.html" class="section-link">Haqqımızda</a>
+                        <a href="departments.html" class="section-link">Şöbələr</a>
+                        <a href="blog.html" class="section-link">Blog</a>
+                        <a href="doctors.html" class="section-link">Həkimlərimiz</a>
+                        <a href="contact.html" class="section-link">Əlaqə</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Şöbələr</h3>
+                    <div class="section-links">
+                        <a href="departments-detail.html" class="section-link">Cərrahiyə</a>
+                        <a href="departments-detail.html" class="section-link">Analiz</a>
+                        <a href="departments-detail.html" class="section-link">Stomotologiya</a>
+                        <a href="departments-detail.html" class="section-link">Urologiya</a>
+                        <a href="departments-detail.html" class="section-link">Nevrologiya</a>
+                        <a href="departments-detail.html" class="section-link">Reanimasiya</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="contactTitle">Əlaqə</h3>
+                    <div class="contact-links">
+                        <a href="" class="hotline">*7606</a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/location.svg" alt="">
+                            Adil Məmmədov küç. 52 ,Binəqədi
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/mailicon.svg" alt="">
+                            info@hospital.az
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/phoneIcon.svg" alt="">
+                            +994 12 404 76 06
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-bottom-text">
+                <p>All Rights Reserved © 2024  <a href="https://166tech.az/">166Tech</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect()
+        })
+    </script>
+    <script src="./assets/swiper/swiper.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

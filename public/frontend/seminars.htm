@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-contacts">
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/location.svg" alt="">  
+                    <p>Adil Məmmədov küç. 52 ,Binəqədi</p>                   
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/mailicon.svg" alt="">
+                    <p>info@hospital.az</p>                   
+                </a>
+                <a href="" class="header-contact-item">
+                    <img src="./assets/icons/phoneIcon.svg" alt="">                         
+                    <p>+994 12 404 76 06</p>                   
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="socials">
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/fb-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/insta-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/youtube-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/linkedin-white.svg" alt="">
+                    </a>
+                </div>
+                <a href="" class="phone">*7606</a>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner">
+        <img src="./assets/images/seminarBanner.png" alt="" class="bannerBg">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </a>
+            <div class="header-right">
+                <div class="header-lang">
+                    <button class="current-lang" type="button">
+                        Az 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+                        </svg>                            
+                    </button>
+                    <div class="other-langs">
+                        <a href="" class="other-lang-item">En</a>
+                        <a href="" class="other-lang-item">Ru</a>
+                    </div>
+                </div>
+                <button class="hamburger" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="#3D8E86"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+        <div class="nav-navigate">
+            <div class="nav-navigate-left">
+                <img src="./assets/images/headTitleBg.svg" alt="">
+                <h1 class="page-title">Seminarlar və Məlumatlar</h1>
+            </div>
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-item">Əsas səhifə</a>
+                <span>
+                    <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.504 0.48H2.344L6.216 4.144L2.344 7.824H0.504L4.376 4.144L0.504 0.48ZM9.129 0.48H10.969L14.841 4.144L10.969 7.824H9.129L13.001 4.144L9.129 0.48Z" fill="white"/>
+                    </svg>
+                </span>
+                <a href="seminars.htm" class="breadcrumb-item">Seminarlar və Məlumatlar</a>
+            </div>
+        </div>
+    </div>
+    <div class="seminar-container">
+        <div class="seminarTabButtons">
+            <button class="seminarTabBtn" id="seminar">Seminarlar</button>
+            <button class="seminarTabBtn" id="information">Məlumatlar</button>
+            <button class="seminarTabBtn" id="all">Hamısı</button>
+        </div>
+        <div class="seminar-cards">
+            <a href="blog-detail.html" class="infoCart">
+                <div class="cartHead">
+                    <p class="tag">Faydalı məlumat</p>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <h2 class="infoName">Labaratoriya analizlərin verilmə qaydaları</h2>
+                
+                <div class="cart-bottom">
+                    <div class="infoTime">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                        </svg>  
+                        <p>06 fevral 2025</p>                      
+                    </div>
+                    <div class="info-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                </div>
+                <img src="./assets/images/infoImg1.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="seminarCart">
+                <div class="cartHead">
+                    <p class="tag">Seminar</p>
+                    <p class="seminarPrice">Odənişsiz</p>
+                </div>
+                <h2 class="seminarName">Travmatoloji və ortopedik əməliyyatlarda spinal anesteziya</h2>
+                <div class="seminarTime">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                    </svg>  
+                    <p>06 fevral 2025</p>                      
+                </div>
+                <div class="cart-bottom">
+                    <div class="seminar-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <img src="./assets/images/seminar1.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="seminarCart">
+                <div class="cartHead">
+                    <p class="tag">Seminar</p>
+                    <p class="seminarPrice">Odənişsiz</p>
+                </div>
+                <h2 class="seminarName">Sağlam onurğa sağlamlığın təməlidir</h2>
+                <div class="seminarTime">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                    </svg>  
+                    <p>06 fevral 2025</p>                      
+                </div>
+                <div class="cart-bottom">
+                    <div class="seminar-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <img src="./assets/images/seminar2.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="infoCart">
+                <div class="cartHead">
+                    <p class="tag">Faydalı məlumat</p>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <h2 class="infoName">Labaratoriya analizlərin verilmə qaydaları</h2>
+                
+                <div class="cart-bottom">
+                    <div class="infoTime">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                        </svg>  
+                        <p>06 fevral 2025</p>                      
+                    </div>
+                    <div class="info-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                </div>
+                <img src="./assets/images/infoImg2.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="infoCart">
+                <div class="cartHead">
+                    <p class="tag">Faydalı məlumat</p>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <h2 class="infoName">Labaratoriya analizlərin verilmə qaydaları</h2>
+                
+                <div class="cart-bottom">
+                    <div class="infoTime">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                        </svg>  
+                        <p>06 fevral 2025</p>                      
+                    </div>
+                    <div class="info-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                </div>
+                <img src="./assets/images/infoImg3.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="seminarCart">
+                <div class="cartHead">
+                    <p class="tag">Seminar</p>
+                    <p class="seminarPrice">Odənişsiz</p>
+                </div>
+                <h2 class="seminarName">Oynaq duzlaşmasından necə xilas olaq?</h2>
+                <div class="seminarTime">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                    </svg>  
+                    <p>06 fevral 2025</p>                      
+                </div>
+                <div class="cart-bottom">
+                    <div class="seminar-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <img src="./assets/images/seminar3.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="infoCart">
+                <div class="cartHead">
+                    <p class="tag">Faydalı məlumat</p>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <h2 class="infoName">Ultrasəs müayinə <br>(USM)</h2>
+                <div class="cart-bottom">
+                    <div class="infoTime">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                        </svg>  
+                        <p>06 fevral 2025</p>                      
+                    </div>
+                    <div class="info-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                </div>
+                <img src="./assets/images/infoImg4.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="seminarCart">
+                <div class="cartHead">
+                    <p class="tag">Seminar</p>
+                    <p class="seminarPrice">Odənişsiz</p>
+                </div>
+                <h2 class="seminarName">Sağlam onurğa sağlamlığın təməlidir</h2>
+                <div class="seminarTime">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                    </svg>  
+                    <p>06 fevral 2025</p>                      
+                </div>
+                <div class="cart-bottom">
+                    <div class="seminar-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <img src="./assets/images/seminar2.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="seminarCart">
+                <div class="cartHead">
+                    <p class="tag">Seminar</p>
+                    <p class="seminarPrice">Odənişsiz</p>
+                </div>
+                <h2 class="seminarName">Travmatoloji və ortopedik əməliyyatlarda spinal anesteziya</h2>
+                <div class="seminarTime">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                    </svg>  
+                    <p>06 fevral 2025</p>                      
+                </div>
+                <div class="cart-bottom">
+                    <div class="seminar-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <img src="./assets/images/seminar4.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="seminarCart">
+                <div class="cartHead">
+                    <p class="tag">Seminar</p>
+                    <p class="seminarPrice">Odənişsiz</p>
+                </div>
+                <h2 class="seminarName">Sağlam onurğa sağlamlığın təməlidir</h2>
+                <div class="seminarTime">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                    </svg>  
+                    <p>06 fevral 2025</p>                      
+                </div>
+                <div class="cart-bottom">
+                    <div class="seminar-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <img src="./assets/images/seminar5.png" alt="" class="cartImg">
+            </a>
+            <a href="blog-detail.html" class="infoCart">
+                <div class="cartHead">
+                    <p class="tag">Faydalı məlumat</p>
+                    <p class="direction">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66699 14.4287L4.66699 12.2859L17.167 12.2859L11.4378 6.39302L12.917 4.87159L21.167 13.3573L12.917 21.843L11.4378 20.3216L17.167 14.4287L4.66699 14.4287Z" fill="white"/>
+                        </svg>                            
+                    </p>
+                </div>
+                <h2 class="infoName">Labaratoriya analizlərin verilmə qaydaları</h2>
+                <div class="cart-bottom">
+                    <div class="infoTime">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20ZM12 2C17.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2ZM15.3 16.2L14 17L11 11.8V7H12.5V11.4L15.3 16.2Z" fill="white"/>
+                        </svg>  
+                        <p>06 fevral 2025</p>                      
+                    </div>
+                    <div class="info-view">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C3.98825 13.6503 5.24331 15.0407 6.80248 16.0133C8.36165 16.9858 10.1624 17.5013 12 17.5013C13.8376 17.5013 15.6383 16.9858 17.1975 16.0133C18.7567 15.0407 20.0117 13.6503 20.82 12C20.0117 10.3497 18.7567 8.95925 17.1975 7.98675C15.6383 7.01424 13.8376 6.49868 12 6.49868C10.1624 6.49868 8.36165 7.01424 6.80248 7.98675C5.24331 8.95925 3.98825 10.3497 3.18 12Z" fill="white"/>
+                        </svg>
+                        <p>300</p>                            
+                    </div>
+                </div>
+                <img src="./assets/images/infoImg5.png" alt="" class="cartImg">
+            </a>
+        </div>
+    </div>
+
+    <div class="aside-menu-container">
+        <div class="aside-menu-top">
+            <div class="header-lang">
+                <button class="current-lang" type="button">
+                    Az 
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="white"/>
+                    </svg>                            
+                </button>
+                <div class="other-langs">
+                    <a href="" class="other-lang-item">En</a>
+                    <a href="" class="other-lang-item">Ru</a>
+                </div>
+            </div>
+            <button class="closeMenu" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.36 19.78L12 13.41L5.63997 19.78L4.21997 18.36L10.59 12L4.21997 5.63997L5.63997 4.21997L12 10.59L18.36 4.22997L19.77 5.63997L13.41 12L19.77 18.36L18.36 19.78Z" fill="#243352"/>
+                </svg>                                          
+            </button>
+        </div>
+        <div class="aside-menu">
+            <a href="index.html" class="aside-link">Əsas səhifə</a>
+            <a href="about.html" class="aside-link">Haqqımızda</a>
+            <a href="doctors.html" class="aside-link">Həkimlər</a>
+            <a href="departments.html" class="aside-link">Şöbələr</a>
+            <a href="blog.html" class="aside-link">Blog</a>
+            <a href="contact.html" class="aside-link">Əlaqə</a>
+        </div>
+        <div class="aside-menu-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <a href="" class="phone">*7606</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-left">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <h2 class="footerTitle">Sağlamlığınız  Bizim Prioritetimizdir</h2>
+                <div class="short-desc">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text .</p>
+                </div>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Quick Links</h3>
+                    <div class="section-links">
+                        <a href="index.html" class="section-link">Əsas səhifə</a>
+                        <a href="about.html" class="section-link">Haqqımızda</a>
+                        <a href="departments.html" class="section-link">Şöbələr</a>
+                        <a href="blog.html" class="section-link">Blog</a>
+                        <a href="doctors.html" class="section-link">Həkimlərimiz</a>
+                        <a href="contact.html" class="section-link">Əlaqə</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="sectionTitle">Şöbələr</h3>
+                    <div class="section-links">
+                        <a href="departments-detail.html" class="section-link">Cərrahiyə</a>
+                        <a href="departments-detail.html" class="section-link">Analiz</a>
+                        <a href="departments-detail.html" class="section-link">Stomotologiya</a>
+                        <a href="departments-detail.html" class="section-link">Urologiya</a>
+                        <a href="departments-detail.html" class="section-link">Nevrologiya</a>
+                        <a href="departments-detail.html" class="section-link">Reanimasiya</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h3 class="contactTitle">Əlaqə</h3>
+                    <div class="contact-links">
+                        <a href="" class="hotline">*7606</a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/location.svg" alt="">
+                            Adil Məmmədov küç. 52 ,Binəqədi
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/mailicon.svg" alt="">
+                            info@hospital.az
+                        </a>
+                        <a href="" class="contact-link">
+                            <img src="./assets/icons/phoneIcon.svg" alt="">
+                            +994 12 404 76 06
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="socials">
+                <a href="" class="social-item">
+                    <img src="./assets/icons/fb-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/insta-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/youtube-white.svg" alt="">
+                </a>
+                <a href="" class="social-item">
+                    <img src="./assets/icons/linkedin-white.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-bottom-text">
+                <p>All Rights Reserved © 2024  <a href="https://166tech.az/">166Tech</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect()
+        })
+    </script>
+    <script src="./assets/swiper/swiper.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
