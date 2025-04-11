@@ -122,7 +122,7 @@
                     <a href="{{ route('lab') }}" class="menu-box">
                         <p>{{ $settings['diagnostics'] }}</p>
                         <div class="icon">
-                            <img src="{{ asset('frontend/assets/icons/diagnostikaIcon.svg') }}" alt="">.
+                            <img src="{{ asset('frontend/assets/icons/diagnostikaIcon.svg') }}" alt="">
                         </div>
                     </a>
                     <a href="{{ route('lab') }}" class="menu-box">
